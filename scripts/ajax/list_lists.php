@@ -10,7 +10,7 @@ $lists = $mc->lists();
 
 echo "<ul>";
 foreach($lists["data"] as $list){
-	echo "<li>" . $list["name"] . "</li>";
+	echo "<li onclick='javascript:showUsers(this, \"" . $list["id"] . "\")'>" . $list["name"] . "</li><li class='users'></li>";
 }
 echo "</ul>";
 ?>
